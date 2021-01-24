@@ -1,0 +1,33 @@
+Xpath:
+we have 2 types of Xpath:
+
+1. Absolute or Native Xpath
+Starts with single forward slash /
+Ex : /html/head/meta
+
+2.Revlative Xpath;
+starts with double forward slashes //
+  //tagname[@attribute = 'attribute value']
+
+By Text :     //tagname[text() = 'text value']
+By Contains : //tagname[contains(@attribute, 'attribute value')]
+By Starts with : //tagname[starts-with(@attribute, ' starting with attribute value ')]
+By Ends with : //tagname[ends-with(@attribute, 'attribute value ending with')]
+
+Advanced Xpath:
+Is based on parent and child, sibling relationships
+
+Identifying elements by following sibling
+//tagName[@attribute='attribute value']/following-sibling::tagName
+
+Identifying elements by preceding sibling
+//tagName[@attribute='attribute value']/preceding-sibling::tagName
+
+Identifying elements by its parent
+//tagname[@attribute='attribute value']/parent::ParentTagName
+
+Identifying elements by its ancestor
+//tagName[@attribute = 'attribute value']/ancestor::ancestor tagName
+
+Identifying elements by its index
+(//tagName[@attribute = 'attribute value'])[index number]
